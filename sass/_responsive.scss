@@ -1,3 +1,16 @@
 /*__________ RESPONSIVE __________*/
 
 // HELP : http://www.adamkaplan.me/grid/
+
+@media screen and (max-width: 500px) {
+
+	section#social ul>li {
+		width: 80%;
+		a {
+			display: block;
+			margin-left: auto; 
+			margin-right: auto; 
+			}
+	}	
+
+}
