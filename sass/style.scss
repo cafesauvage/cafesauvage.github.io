@@ -1,0 +1,92 @@
+@import "base";
+
+
+
+// ----- BODY ----- //
+
+body, html {
+	height: 100%;
+	background: white;
+}
+
+// ----- HEADER ----- //
+
+header {
+	color: white;
+	padding: 4% 0 3% 0;
+	@extend %gradient;
+	@include background-size(cover);
+	background: url(../img/back.jpg) no-repeat center fixed;
+
+	h1 {
+		@extend %thin;
+		margin-bottom: 2%;
+		font-size: 2.2em;
+		text-align: center;
+	}
+
+	article {
+		width: 50%;
+		@extend %center;
+	}
+	
+
+	blockquote {
+		font-size: 1.2em;
+		text-align: justify;
+		@extend %light;
+		p {
+			padding-top: 1%;
+		}
+	}
+
+	author p {
+		text-align: right;
+		padding-top: 7%;
+
+	}
+}
+
+// ----- CITATION ----- //
+
+section#social {
+	padding: 3%;
+	text-align: center;
+
+	h1 {
+		@extend %thin;
+		font-size: 2em;
+		margin-bottom: 3%;
+	}
+	ul>li {
+		margin: 20px 5px;
+		display: inline-block;
+		a {
+			width: 100px;
+			padding: 10px 25px;
+			@include border-radius(10px);
+			border: solid 1px;
+			&.twitter {border-color: $twitter;i {color:$twitter}}
+			&.instagram {border-color: $instagram;i {color:$instagram}}
+			&.facebook {border-color: $facebook;i {color:$facebook}}
+			&.foursquare {border-color: $foursquare;i {color:$foursquare}}
+			&.soundcloud {border-color: $soundcloud;i {color:$soundcloud}}
+			@include transition(ease all 0.2s);
+		}
+		a:hover {
+			i,span{color:white;}
+			&.twitter {background-color: $twitter};
+			&.instagram {background-color: $instagram};
+			&.facebook {background-color: $facebook};
+			&.foursquare {background-color: $foursquare};
+			&.soundcloud {background-color: $soundcloud};
+		}
+		i {padding-right: 10px;}
+	}
+
+
+}
+
+
+
+

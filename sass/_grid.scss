@@ -1,0 +1,14 @@
+/*__________ GRID __________*/
+
+// 1 rem = 16px
+
+%center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container {
+  	@extend %center;
+	width: 70%;
+}
+
