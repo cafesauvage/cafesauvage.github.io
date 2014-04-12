@@ -5,6 +5,7 @@
 // ----- BODY ----- //
 
 body, html {
+	font-size: 1em;
 	height: 100%;
 	background: white;
 }
@@ -13,7 +14,7 @@ body, html {
 
 header {
 	color: white;
-	padding: 4% 0 3% 0;
+	padding: 5% 0 4% 0;
 	@extend %gradient;
 	@include background-size(cover);
 	background: url(../img/back.jpg) no-repeat center fixed;
@@ -26,7 +27,7 @@ header {
 	}
 
 	article {
-		width: 50%;
+		width: 90%;
 		@extend %center;
 	}
 	
@@ -56,13 +57,13 @@ section#social {
 	h1 {
 		@extend %thin;
 		font-size: 2em;
-		margin-bottom: 3%;
+		margin-bottom: 2%;
 	}
+
 	ul>li {
 		margin: 20px 5px;
 		display: inline-block;
 		a {
-			width: 100px;
 			padding: 10px 25px;
 			@include border-radius(10px);
 			border: solid 1px;
@@ -87,3 +88,12 @@ section#social {
 
 }
 
+
+
+
+
+
+
+
+
+@import "responsive";
